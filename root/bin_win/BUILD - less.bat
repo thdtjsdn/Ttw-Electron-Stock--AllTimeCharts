@@ -1,3 +1,11 @@
-..\..\..\TtwPlatform-Binary--Win\Binary\NodeJS\exes100.exe less--createCSS__LESS_To_CSS.js
+chcp 65001
 
-call less__less_ui__css--delete_tmp_LESS.bat
+::
+
+mkdir ..\css
+
+..\..\..\TtwPlatform-Binary--Win\Binary\NodeJS\exes100.exe "BUILD - less.js"
+
+call "DELETE - 빌드 파일 삭제 - less.bat"
+
+cmd /k

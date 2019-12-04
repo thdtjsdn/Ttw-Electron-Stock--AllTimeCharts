@@ -2,6 +2,9 @@ chcp 65001
 
 ::
 
+mkdir ..\css
+mkdir ..\css_ui
+
 ..\..\..\TtwPlatform-Binary--Win\Binary\NodeJS\exes100.exe "BUILD - less, less_ui.js"
 
 ::
