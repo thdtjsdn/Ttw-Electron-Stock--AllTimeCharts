@@ -120,6 +120,11 @@ root/ui_import_custom
 ####################################################################################################
 
 data/list.json
+data/list/***
+data/종목-기간-값-배열/***
+data/종목-기간-일-배열/***
+data/종목-기간-일-배열--트렌드/***
+data--ScreenShot/***
 
 git_add_commit_push.bat
 git_pull.bat
