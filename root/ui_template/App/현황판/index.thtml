@@ -42,16 +42,16 @@
 
 		.l_n   { display: block; overflow:hidden; white-space: nowrap; text-overflow: ellipsis; width: 100px; max-width: 100px; }
 		.l_n_b { display: block; overflow:hidden; white-space: nowrap; text-overflow: ellipsis; width: 80px; max-width: 80px; font-size: 14px; color: #FF0000; font-weight: 800; }
-		.l_n_s { display: block; overflow:hidden; white-space: nowrap; text-overflow: ellipsis; width: 80px; max-width: 80px; font-size: 14px; color: #0040ff; font-weight: 800; }
+		.l_n_s { display: block; overflow:hidden; white-space: nowrap; text-overflow: ellipsis; width: 80px; max-width: 80px; font-size: 14px; color: #2c79f5; font-weight: 800; }
 
 		.l_c { display: block; overflow:hidden; width: 100px; }
 		.l_u { display: block; overflow:hidden; width: 100px !important; }
 		.l_r { display: block; overflow:hidden; width: 100px; }
 		.l_chart { overflow:hidden; width: 600px; margin: 0px; background-color: #000000 }
 
-		.l_c_b { color: #0040ff; display: block; overflow:hidden; width: 100px; }
-		.l_u_b { color: #0040ff; display: block; overflow:hidden; width: 100px !important; }
-		.l_r_b { color: #0040ff; display: block; overflow:hidden; width: 100px; }
+		.l_c_b { color: #2c79f5; display: block; overflow:hidden; width: 100px; }
+		.l_u_b { color: #2c79f5; display: block; overflow:hidden; width: 100px !important; }
+		.l_r_b { color: #2c79f5; display: block; overflow:hidden; width: 100px; }
 
 		.l_c_r { color: #ff0000; display: block; overflow:hidden; width: 100px; }
 		.l_u_r { color: #ff0000; display: block; overflow:hidden; width: 100px !important; }
@@ -60,11 +60,11 @@
 		.k_c { overflow:hidden; width: 50px; }
 		.k_u { overflow:hidden; width: 50px; }
 		.k_r { overflow:hidden; width: 50px; }
-		.k_chart { overflow:hidden; width: 400px; }
+		.k_chart { overflow:hidden; width: 600px; }
 
-		.k_c_b { color: #0040ff; overflow:hidden; width: 50px; }
-		.k_u_b { color: #0040ff; overflow:hidden; width: 50px; }
-		.k_r_b { color: #0040ff; overflow:hidden; width: 50px; }
+		.k_c_b { color: #2c79f5; overflow:hidden; width: 50px; }
+		.k_u_b { color: #2c79f5; overflow:hidden; width: 50px; }
+		.k_r_b { color: #2c79f5; overflow:hidden; width: 50px; }
 
 		.k_c_r { color: #ff0000; overflow:hidden; width: 50px; }
 		.k_u_r { color: #ff0000; overflow:hidden; width: 50px; }
@@ -72,7 +72,7 @@
 
 		/* .title_divider   { margin: 2px !important; font-size: 11px !important; } */
 		.title_divider   { margin: 2px !important; font-size: 11px !important; color: #ffffff !important; }
-		.title_divider_b { margin: 2px !important; font-size: 11px !important; color: #0040ff !important; }
+		.title_divider_b { margin: 2px !important; font-size: 11px !important; color: #2c79f5 !important; }
 		.title_divider_r { margin: 2px !important; font-size: 11px !important; color: #ff0000 !important; }
 
 		.table_trends {
@@ -89,7 +89,7 @@
 
 	<!-- 1 -->
 	<div class="ui horizontal segments">
-		<div class="ui tiny form" style="width: calc(100% - 900px); height: 60px;">
+		<div class="ui tiny form" style="width: calc(100% - 1600PX); height: 60px;">
 			<div class="field">
 				<div class="two fields">
 					<div class="field" style="color: #ffffff !important;">
@@ -114,6 +114,10 @@
 			<div class="field">
 				<div class="fields">
 
+					<div class="field" style="color: #ffffff !important;">
+						<label>MA 표출</label>
+						<input id="input-stock_MA" type="checkbox" checked>
+					</div>
 					<div class="field" style="color: #ffffff !important;">
 						<label>종목 추가(이름 정확히)</label>
 						<input id="input-stock_name" type="text" placeholder="이름은 완벽하게 적어야한다.">
@@ -208,6 +212,7 @@
 
 	<!--
 	<div class="ui vertical segments" style="margin-top: 0px; height: 960px; overflow-y: auto; overflow-x: hidden;">
+	<div class="ui vertical segments" style="margin-top: 0px; height: 1320px; overflow-y: auto; overflow-x: hidden;">
 	<div class="ui vertical segments" style="margin-top: 0px; height: 2040px; overflow-y: auto; overflow-x: hidden;">
 	-->
 	<div class="ui vertical segments" style="margin-top: 0px; height: 2040px; overflow-y: auto; overflow-x: hidden;">
@@ -218,9 +223,9 @@
 			<div class="ui horizontal segments" style="padding: 5px;">
 
 				<div class="ui cards" id="list_selected" style="margin: 5px; width: 100%; height: 100%; background-color: #000000;">
-					<div class="ui" id="{{code}}" style="margin: 0px; width: 520px;">
-						<div class="title_divider ui horizontal divider">{{name}}</div>
-						<div id="{{code}}-chart" class="l_chart"></div>
+					<div class="ui" id="{{code}}" style="margin: 0px; width: 600px;">
+						<div class="title_divider ui horizontal divider" style="cursor: pointer;">{{name}}</div>
+						<div id="{{code}}-chart" class="l_chart" style="width: 600px;"></div>
 						<div style="display: flex; height: 25px; margin: 5px 0px 0px 0px;">
 							<p class="l_n">{{name}}</p>
 							<p class="l_c">{{cost}}</p>
@@ -231,13 +236,24 @@
 							<table class="table_trends">
 								<thead>
 									<tr>
-										<td style="width: 70px;">날짜</td>
+										<td style="width: 57px;">날짜</td>
 										<td style="width: 50px;">외인</td>
 										<td style="width: 50px;">기관</td>
 										<td style="width: 50px;">개인</td>
-										<td style="width: 50px;">등락률</td>
+										<td style="width: 34px;">등락률</td>
+										<td style="width: 34px;">등락저</td>
+										<td style="width: 34px;">등락고</td>
 										<td style="width: 50px;">종가</td>
 										<td style="width: 50px;">거래량</td>
+										<!--
+										<td style="width: 34px;">25선</td>
+										<td style="width: 34px;">60선</td>
+										<td style="width: 34px;">90선</td>
+										<td style="width: 34px;">120선</td>
+										-->
+										<td style="width: 34px;">25선</td>
+										<td style="width: 34px;">60선</td>
+										<td style="width: 34px;">90선</td>
 									</tr>
 								</thead>
 								<tbody>
@@ -247,8 +263,20 @@
 										<td class="trends_o">{{o}}</td>
 										<td class="trends_p">{{p}}</td>
 										<td class="trends_r">{{r}}</td>
+										<td class="trends_ma">{{rl}}</td>
+										<td class="trends_ma">{{rh}}</td>
 										<td class="trends_w">{{w}}</td>
 										<td class="trends_v">{{v}}</td>
+										<!--
+										<td class="trends_ma">{{ma25}}</td>
+										<td class="trends_ma">{{ma25p}}</td>
+										<td class="trends_ma">{{ma60p}}</td>
+										<td class="trends_ma">{{ma90p}}</td>
+										<td class="trends_ma">{{ma1200p}}</td>
+										-->
+										<td class="trends_ma25">{{ma25p}}</td>
+										<td class="trends_ma60">{{ma60p}}</td>
+										<td class="trends_ma90">{{ma90p}}</td>
 									</tr>
 								</tbody>
 							</table>
