@@ -120,8 +120,17 @@ root/ui_import_custom
 ####################################################################################################
 
 data/list.json
+data/list*.json
 data/list-all.json
+
+data/Backup/***
+data/Backup_개별/***
+data/Backup_개별_정제/***
+
 data/list/***
+data/list_원본/***
+data/list_정제/***
+
 data/종목-기간-값-배열/***
 data/종목-기간-일-배열/***
 data/종목-기간-일-배열--트렌드/***
