@@ -26,6 +26,9 @@
 			background-color: #1c1a19;
 		}
 
+		td {
+		}
+
 
 		.divContainer {
 			position: absolute;
@@ -223,9 +226,9 @@
 			<div class="ui horizontal segments" style="padding: 5px;">
 
 				<div class="ui cards" id="list_selected" style="margin: 5px; width: 100%; height: 100%; background-color: #000000;">
-					<div class="ui" id="{{code}}" style="margin: 0px; width: 600px;">
+					<div class="ui" id="{{code}}" style="margin: 0px; width: 620px;">
 						<div class="title_divider ui horizontal divider" style="cursor: pointer;">{{name}}</div>
-						<div id="{{code}}-chart" class="l_chart" style="width: 600px;"></div>
+						<div id="{{code}}-chart" class="l_chart" style="width: 100%;"></div>
 						<div style="display: flex; height: 25px; margin: 5px 0px 0px 0px;">
 							<p class="l_n">{{name}}</p>
 							<p class="l_c">{{cost}}</p>
@@ -236,21 +239,40 @@
 							<table class="table_trends">
 								<thead>
 									<tr>
-										<td style="width: 57px;">날짜</td>
-										<td style="width: 50px;">외인</td>
-										<td style="width: 50px;">기관</td>
-										<td style="width: 50px;">개인</td>
+										<!--
 										<td style="width: 34px;">등락률</td>
 										<td style="width: 34px;">등락저</td>
 										<td style="width: 34px;">등락고</td>
-										<td style="width: 50px;">종가</td>
-										<td style="width: 50px;">거래량</td>
+
+										<td style="width: 34px;">%</td>
+										<td style="width: 34px;">%저</td>
+										<td style="width: 34px;">%고</td>
+										-->
+										<td style="min-width: 26px;">날짜</td>
+										<td>외인</td>
+										<td>기관</td>
+										<td>개인</td>
+										<td style="width: 34px;">%</td>
+										<td style="width: 34px;">%저</td>
+										<td style="width: 34px;">%고</td>
+										<td>종가</td>
+										<td>거래량</td>
 										<!--
+										<td style="width: 34px;">5선</td>
+										<td style="width: 34px;">10선</td>
+										<td style="width: 34px;">15선</td>
+										<td style="width: 34px;">20선</td>
+
 										<td style="width: 34px;">25선</td>
 										<td style="width: 34px;">60선</td>
 										<td style="width: 34px;">90선</td>
 										<td style="width: 34px;">120선</td>
 										-->
+										<td style="width: 34px;">5선</td>
+										<td style="width: 34px;">10선</td>
+										<td style="width: 34px;">15선</td>
+										<td style="width: 34px;">20선</td>
+
 										<td style="width: 34px;">25선</td>
 										<td style="width: 34px;">60선</td>
 										<td style="width: 34px;">90선</td>
@@ -258,7 +280,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>{{d}}</td>
+										<td style="font-size: 9px;">{{d}}</td>
 										<td class="trends_f">{{f}}</td>
 										<td class="trends_o">{{o}}</td>
 										<td class="trends_p">{{p}}</td>
@@ -269,11 +291,23 @@
 										<td class="trends_v">{{v}}</td>
 										<!--
 										<td class="trends_ma">{{ma25}}</td>
-										<td class="trends_ma">{{ma25p}}</td>
-										<td class="trends_ma">{{ma60p}}</td>
-										<td class="trends_ma">{{ma90p}}</td>
-										<td class="trends_ma">{{ma1200p}}</td>
+
+										<td class="trends_ma5">{{ma5p}}</td>
+										<td class="trends_ma10">{{ma10p}}</td>
+										<td class="trends_ma15">{{ma15p}}</td>
+										<td class="trends_ma20">{{ma20p}}</td>
+
+										<td class="trends_ma25">{{ma25p}}</td>
+										<td class="trends_ma60">{{ma60p}}</td>
+										<td class="trends_ma90">{{ma90p}}</td>
+
+										<td class="trends_ma10">{{ma120p}}</td>
 										-->
+										<td class="trends_ma5">{{ma5p}}</td>
+										<td class="trends_ma10">{{ma10p}}</td>
+										<td class="trends_ma15">{{ma15p}}</td>
+										<td class="trends_ma20">{{ma20p}}</td>
+
 										<td class="trends_ma25">{{ma25p}}</td>
 										<td class="trends_ma60">{{ma60p}}</td>
 										<td class="trends_ma90">{{ma90p}}</td>
