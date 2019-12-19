@@ -44,7 +44,7 @@
 		}
 
 		.l_n   { display: block; overflow:hidden; white-space: nowrap; text-overflow: ellipsis; width: 100px; max-width: 100px; }
-		.l_n_b { display: block; overflow:hidden; white-space: nowrap; text-overflow: ellipsis; width: 80px; max-width: 80px; font-size: 14px; color: #FF0000; font-weight: 800; }
+		.l_n_b { display: block; overflow:hidden; white-space: nowrap; text-overflow: ellipsis; width: 80px; max-width: 80px; font-size: 14px; color: #ff584d; font-weight: 800; }
 		.l_n_s { display: block; overflow:hidden; white-space: nowrap; text-overflow: ellipsis; width: 80px; max-width: 80px; font-size: 14px; color: #2c79f5; font-weight: 800; }
 
 		.l_c { display: block; overflow:hidden; width: 100px; }
@@ -56,9 +56,9 @@
 		.l_u_b { color: #2c79f5; display: block; overflow:hidden; width: 100px !important; }
 		.l_r_b { color: #2c79f5; display: block; overflow:hidden; width: 100px; }
 
-		.l_c_r { color: #ff0000; display: block; overflow:hidden; width: 100px; }
-		.l_u_r { color: #ff0000; display: block; overflow:hidden; width: 100px !important; }
-		.l_r_r { color: #ff0000; display: block; overflow:hidden; width: 100px; }
+		.l_c_r { color: #ff584d; display: block; overflow:hidden; width: 100px; }
+		.l_u_r { color: #ff584d; display: block; overflow:hidden; width: 100px !important; }
+		.l_r_r { color: #ff584d; display: block; overflow:hidden; width: 100px; }
 
 		.k_c { overflow:hidden; width: 50px; }
 		.k_u { overflow:hidden; width: 50px; }
@@ -69,14 +69,14 @@
 		.k_u_b { color: #2c79f5; overflow:hidden; width: 50px; }
 		.k_r_b { color: #2c79f5; overflow:hidden; width: 50px; }
 
-		.k_c_r { color: #ff0000; overflow:hidden; width: 50px; }
-		.k_u_r { color: #ff0000; overflow:hidden; width: 50px; }
-		.k_r_r { color: #ff0000; overflow:hidden; width: 50px; }
+		.k_c_r { color: #ff584d; overflow:hidden; width: 50px; }
+		.k_u_r { color: #ff584d; overflow:hidden; width: 50px; }
+		.k_r_r { color: #ff584d; overflow:hidden; width: 50px; }
 
 		/* .title_divider   { margin: 2px !important; font-size: 11px !important; } */
 		.title_divider   { margin: 2px !important; font-size: 11px !important; color: #ffffff !important; }
 		.title_divider_b { margin: 2px !important; font-size: 11px !important; color: #2c79f5 !important; }
-		.title_divider_r { margin: 2px !important; font-size: 11px !important; color: #ff0000 !important; }
+		.title_divider_r { margin: 2px !important; font-size: 11px !important; color: #ff584d !important; }
 
 		.table_trends {
 			background-color: #0a0909;
@@ -255,7 +255,7 @@
 										<td style="width: 34px;">%</td>
 										<td style="width: 34px;">%저</td>
 										<td style="width: 34px;">%고</td>
-										<td>종가</td>
+										<td style="width: 24px;">종가</td>
 										<td>거래량</td>
 										<!--
 										<td style="width: 34px;">5선</td>
