@@ -83,6 +83,10 @@
 			width: 100%;
 			text-align: center;
 		}
+
+		.table_notice { background-color: #0a0909; width: 100%; }
+		.table_news   { background-color: #0a0909; width: 100%; }
+		.table_google { background-color: #0a0909; width: 100%; }
 	</style>
 
 	<!-- 1 -->
@@ -315,6 +319,24 @@
 								</tbody>
 							</table>
 						</div>
+
+						<!-- 공시 -->
+						<div style="display: flex; width: 100%; margin: 5px 0px 0px 0px;">
+							<table class="table_notice"><thead><tr><td style="width: 95px;">공시 시간</td><td>공시 내용</td></tr></thead><tbody><tr><td>{{dt}}</td><td>{{tit}}</td></tr></tbody></table>
+						</div>
+
+						<!-- 뉴스 -->
+						<div style="display: flex; width: 100%; margin: 5px 0px 0px 0px;">
+							<table class="table_notice"><thead><tr><td style="width: 95px;">뉴스 시간</td><td>뉴스 내용</td></tr></thead><tbody><tr><td>{{dt}}</td><td>{{tit}}</td></tr></tbody></table>
+						</div>
+
+						<!-- 구글 검색 -->
+						<!--
+						<div style="display: flex; width: 100%; margin: 5px 0px 0px 0px;">
+							<table class="table_google"><thead><tr><td style="width: 95px;">검색</td></tr></thead><tbody><tr><td>{{txt}}</td></tr></tbody></table>
+						</div>
+						-->
+
 					</div>
 				</div>
 
