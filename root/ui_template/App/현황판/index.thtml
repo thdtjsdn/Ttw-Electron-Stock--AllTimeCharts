@@ -256,14 +256,14 @@
 										<td style="width: 34px;">%고</td>
 										-->
 										<td style="min-width: 26px;">날짜</td>
-										<td>외인</td>
-										<td>기관</td>
-										<td>개인</td>
+										<td style="min-width: 24px;">외인</td>
+										<td style="min-width: 24px;">기관</td>
+										<td style="min-width: 24px;">개인</td>
 										<td style="width: 34px;">%</td>
 										<td style="width: 34px;">%저</td>
 										<td style="width: 34px;">%고</td>
-										<td style="width: 24px;">종가</td>
-										<td>거래량</td>
+										<td style="min-width: 24px;">종가</td>
+										<td style="min-width: 35px;">거래량</td>
 										<!--
 										<td style="width: 34px;">5선</td>
 										<td style="width: 34px;">10선</td>
@@ -339,6 +339,10 @@
 							<table class="table_google"><thead><tr><td style="width: 95px;">검색</td></tr></thead><tbody><tr><td>{{txt}}</td></tr></tbody></table>
 						</div>
 						-->
+
+						<!-- 재무제표 -->
+						<div style="width: 100%; margin: 5px 0px 0px 0px;">
+						</div>
 
 					</div>
 				</div>
