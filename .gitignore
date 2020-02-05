@@ -119,7 +119,11 @@ root/ui_import_custom
 
 ####################################################################################################
 
+data/*.csv
+data/*.json
+data/list.csv
 data/list.json
+data/list*.csv
 data/list*.json
 data/list-all.json
 
