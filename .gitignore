@@ -152,3 +152,6 @@ index.bat
 index.exe
 index.js
 index - ***.js
+root/libs/html2canvas/html2canvas.js
+root/libs/html2canvas/html2canvas.min.js
+root/libs/html2canvas/save.js
