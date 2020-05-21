@@ -120,6 +120,7 @@ root/ui_import_custom
 ####################################################################################################
 
 data/*.csv
+data/*.js
 data/*.json
 data/list.csv
 data/list.json
