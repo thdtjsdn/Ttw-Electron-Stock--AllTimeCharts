@@ -2,6 +2,8 @@ chcp 65001
 
 cd Backup
 
+del *.csv
+
 del "list - ttw_관심 - *"
 del "list - ttw_관심_*"
 del "list - ttw_우량 - *"
