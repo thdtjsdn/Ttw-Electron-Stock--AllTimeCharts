@@ -120,6 +120,7 @@ root/ui_import_custom
 ####################################################################################################
 
 data/*.csv
+data/*.html
 data/*.js
 data/*.json
 data/list.csv
@@ -135,6 +136,7 @@ data/Backup_개별_정제/***
 data/_Source/*.html
 data/_Source/*.js
 data/_공시/***
+data/_누적수급/***
 data/_장중투자자별매매/***
 data/_종합시황뉴스/***
 
@@ -147,6 +149,7 @@ data/list_정제/***
 data/종목-기간-값-배열/***
 data/종목-기간-일-배열/***
 data/종목-기간-일-배열--트렌드/***
+data/종목-기간-일-배열--트렌드-누적/***
 data--ScreenShot/***
 data--영웅문차트/***
 
