@@ -140,6 +140,8 @@ data/_누적수급/***
 data/_장중투자자별매매/***
 data/_종합시황뉴스/***
 
+data/*사용중단*/
+
 data/html/***/*.bat
 data/html/***/*.csv
 data/html/***/*.html
