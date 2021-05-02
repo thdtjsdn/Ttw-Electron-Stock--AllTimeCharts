@@ -18,6 +18,8 @@
 			display: block;
 		}
 
+		p:hover { background-color: brown; }
+
 		tbody tr:nth-child(2n) {
 			background-color: #292626;
 		}
@@ -101,7 +103,7 @@
 
 	<!-- 1 -->
 	<div class="ui horizontal segments">
-		<div class="ui tiny form" style="width: calc(100% - 1600PX); height: 60px;">
+		<div class="ui tiny form" style="width: calc(100% - 1600PX); height: 60px; display: none;">
 			<div class="field">
 				<div class="two fields">
 					<div class="field" style="color: #ffffff !important;">
@@ -227,18 +229,25 @@
 	<div class="ui vertical segments" style="margin-top: 0px; height: 1320px; overflow-y: auto; overflow-x: hidden;">
 	<div class="ui vertical segments" style="margin-top: 0px; height: 2040px; overflow-y: auto; overflow-x: hidden;">
 	-->
-	<div class="ui vertical segments" style="margin-top: 0px; height: 2040px; overflow-y: auto; overflow-x: hidden;">
+	<div class="ui horizontal segments" style="margin-top: 0px; height: 2040px; overflow-y: hidden; overflow-x: hidden;">
 
 		<!-- 2 -->
-		<div class="ui segment" style="font-size: 11px; background-color: #000000;">
-			<h3 class="ui header">KOSPI & KOSDAQ 선택 목록</h3>
-			<div class="ui horizontal segments" style="padding: 5px;">
+		<div class="ui segment" id="id-list-stocks" style="font-size: 11px; background-color: #000000; height: 100%; width: 250px !important; overflow-y: scroll; cursor: pointer;">
+		</div>
 
+		<!-- 2 -->
+		<div class="ui segment" style="font-size: 11px; background-color: #000000; height: 100%; width: 100%; overflow-y: scroll;">
+			<h3 class="ui header" style="display: none;">KOSPI & KOSDAQ 선택 목록</h3>
+			<div class="ui horizontal segments" style="padding: 0px; background-color: #000000;">
+
+				<!--
 				<div class="ui cards" id="list_selected" style="margin: 5px; width: 100%; height: 100%; background-color: #000000;">
-					<div class="ui" id="{{code}}" style="margin: 0px; width: 620px; max-width: 620px;">
+				-->
+				<div class="ui cards" id="list_selected" style="margin: 5px; padding: 0px; height: 100%; background-color: #000000;">
+					<div class="ui" id="{{code}}" style="margin: 0px; width: 700px; max-width: 700px;">
 						<div class="title_divider ui horizontal divider" style="cursor: pointer;">
-							<div style="text-overflow: ellipsis; word-wrap: normal; max-width: 620px; overflow: hidden;">{{name}}</div><br/>
-							<div style="text-overflow: ellipsis; word-wrap: normal; max-width: 620px; overflow: hidden;">{{desc}}</div>
+							<div style="text-overflow: ellipsis; word-wrap: normal; max-width: 700px; overflow: hidden;">{{name}}</div><br/>
+							<div style="text-overflow: ellipsis; word-wrap: normal; max-width: 700px; overflow: hidden;">{{desc}}</div>
 						</div>
 						<div id="{{code}}-chart" class="l_chart" style="width: 100%;"></div>
 						<div style="display: flex; height: 25px; margin: 5px 0px 0px 0px;">
@@ -248,7 +257,7 @@
 							<p class="l_r_r">{{rate}}</p>
 						</div>
 						<div style="display: flex; width: 100%; margin: 5px 0px 0px 0px;">
-							<table class="table_trends">
+							<table class="table_trends" style="table-layout: fixed;">
 								<thead>
 									<tr>
 										<!--
@@ -330,22 +339,26 @@
 
 						<!-- 공시 -->
 						<div style="display: flex; width: 100%; margin: 5px 0px 0px 0px;">
-							<table class="table_notice"><thead><tr><td style="width: 95px;">공시 시간</td><td>공시 내용</td></tr></thead><tbody><tr><td>{{dt}}</td><td>{{tit}}</td></tr></tbody></table>
+							<table class="table_notice" style="table-layout: fixed;"><thead><tr><td style="width: 95px;">공시 시간</td><td style="width: calc( 100% - 95px );">공시 내용</td></tr></thead><tbody><tr><td>{{dt}}</td><td style="width: calc( 100% - 95px ); text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; overflow: hidden;">{{tit}}</td></tr></tbody></table>
 						</div>
 
 						<!-- 뉴스 -->
 						<div style="display: flex; width: 100%; margin: 5px 0px 0px 0px;">
-							<table class="table_notice"><thead><tr><td style="width: 95px;">뉴스 시간</td><td>뉴스 내용</td></tr></thead><tbody><tr><td>{{dt}}</td><td>{{tit}}</td></tr></tbody></table>
+							<table class="table_notice" style="table-layout: fixed;"><thead><tr><td style="width: 95px;">뉴스 시간</td><td style="width: calc( 100% - 95px );">뉴스 내용</td></tr></thead><tbody><tr><td>{{dt}}</td><td style="width: calc( 100% - 95px ); text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; overflow: hidden;">{{tit}}</td></tr></tbody></table>
 						</div>
 
 						<!-- 구글 검색 -->
 						<!--
 						<div style="display: flex; width: 100%; margin: 5px 0px 0px 0px;">
-							<table class="table_google"><thead><tr><td style="width: 95px;">검색</td></tr></thead><tbody><tr><td>{{txt}}</td></tr></tbody></table>
+							<table class="table_google" style="table-layout: fixed;"><thead><tr><td style="width: 95px;">검색</td></tr></thead><tbody><tr><td>{{txt}}</td></tr></tbody></table>
 						</div>
 						-->
 
 						<!-- 재무제표 -->
+						<div style="width: 100%; margin: 5px 0px 0px 0px;">
+						</div>
+
+						<!-- 요약 레포트 -->
 						<div style="width: 100%; margin: 5px 0px 0px 0px;">
 						</div>
 
