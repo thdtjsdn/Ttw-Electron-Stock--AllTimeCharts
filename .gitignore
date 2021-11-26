@@ -136,6 +136,9 @@ data/Backup_개별_정제/***
 data/_Source/*.html
 data/_Source/*.js
 data/_Source/_Source - 사용안함/*.*
+
+data/_Source - 동적생성/*.html
+
 data/_공시/***
 data/_누적수급/***
 data/_장중투자자별매매/***
