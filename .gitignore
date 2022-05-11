@@ -133,6 +133,9 @@ data/Backup/***
 data/Backup_개별/***
 data/Backup_개별_정제/***
 
+data/csv - ***/***
+data/csv - 당일체결상세/***
+
 data/_Source/*.html
 data/_Source/*.js
 data/_Source/_Source - 사용안함/*.*
@@ -146,6 +149,8 @@ data/_종합시황뉴스/***
 
 data/*사용중단*/
 data/*사용 중단*/
+
+data/전체 데이터 - ***/
 
 data/html/***/*.bat
 data/html/***/*.csv
