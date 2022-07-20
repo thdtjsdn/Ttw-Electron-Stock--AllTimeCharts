@@ -133,8 +133,12 @@ data/Backup/***
 data/Backup_개별/***
 data/Backup_개별_정제/***
 
-data/csv - ***/***
 data/csv - 당일체결상세/***
+data/csv - 전종목/***
+data/csv - 전종목 - 상세/_JSON/***
+data/csv - 전종목 - 상세/_JSON - 전체만/***
+data/csv - 전종목 - 상세/_JSON - 정제대상/***
+data/csv - 전종목 - 상세/_TXT/***
 
 data/_Source/*.html
 data/_Source/*.js
@@ -150,10 +154,8 @@ data/_종합시황뉴스/***
 data/*사용중단*/
 data/*사용 중단*/
 
-data/전체 데이터 - 종목/종목-기간-값-배열/***
-data/전체 데이터 - 종목/종목-기간-일-배열/***
-data/전체 데이터 - 지수/종목-기간-값-배열/***
-data/전체 데이터 - 지수/종목-기간-일-배열/***
+data/전체 데이터 - 종목/***
+data/전체 데이터 - 지수/***
 
 data/html/***/*.bat
 data/html/***/*.csv
