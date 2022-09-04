@@ -132,8 +132,11 @@ data/list-all.json
 data/Backup/***
 data/Backup_개별/***
 data/Backup_개별_정제/***
+data/Backup_중복 목록 생성을 위한 목록들/***
 
 data/csv - 당일체결상세/***
+data/csv - 분봉 - 1분/***
+data/csv - 분봉 - 1분 - Backup/***
 data/csv - 전종목/***
 data/csv - 전종목 - 상세/_JSON/***
 data/csv - 전종목 - 상세/_JSON - 전체만/***
