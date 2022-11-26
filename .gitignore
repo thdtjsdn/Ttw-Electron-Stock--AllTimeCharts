@@ -130,6 +130,7 @@ data/list*.json
 data/list-all.json
 
 data/Backup/***
+data/Backup_0/***
 data/Backup_개별/***
 data/Backup_개별_정제/***
 data/Backup_중복 목록 생성을 위한 목록들/***
