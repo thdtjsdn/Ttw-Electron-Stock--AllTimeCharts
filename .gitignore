@@ -143,10 +143,7 @@ data/csv - 분봉 - 상세분봉/***
 data/csv - 분봉 - 상세분봉 - Backup/***
 
 data/csv - 전종목/***
-data/csv - 전종목 - 상세/_JSON/***
-data/csv - 전종목 - 상세/_JSON - 전체만/***
-data/csv - 전종목 - 상세/_JSON - 정제대상/***
-data/csv - 전종목 - 상세/_TXT/***
+data/csv - 전종목 - 상세/_***
 
 data/_Source/*.html
 data/_Source/*.js
