@@ -168,6 +168,9 @@ data/html/***/*.csv
 data/html/***/*.html
 data/html/__전종목 시세/***
 
+data/일자별 등락률 전체 순위/***
+data/일자별 등락률 전체 순위 - Backup/***
+
 data/종목-기간-값-배열/***
 data/종목-기간-값-배열 - F/***
 data/종목-기간-값-배열--의미/***
