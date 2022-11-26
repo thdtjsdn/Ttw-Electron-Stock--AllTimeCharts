@@ -167,10 +167,6 @@ data/html/***/*.csv
 data/html/***/*.html
 data/html/__전종목 시세/***
 
-data/list/***
-data/list_원본/***
-data/list_정제/***
-
 data/종목-기간-값-배열/***
 data/종목-기간-값-배열 - F/***
 data/종목-기간-값-배열--의미/***
